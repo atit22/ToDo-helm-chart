@@ -1,6 +1,6 @@
 
 common:
-  containerRegistryURL: acrdev221.azurecr.io
+  containerRegistryURL: acrdev2212.azurecr.io
   ingressClass: azure-application-gateway
   
 ui:
@@ -20,7 +20,7 @@ getTask:
     tag: v1
   port: 8000
   ServicePort: 80
-  connectionString: "Driver={ODBC Driver 18 for SQL Server};Server=tcp:sql-dev-todoapp-78666.database.windows.net,1433;Database=sqldb-dev-todoapp;Uid=devopsadmin;Pwd=P@ssw01rd@123;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;"
+  connectionString: "Server=tcp:sql-dev-todoapp-02211.database.windows.net,1433;Initial Catalog=sqldbdb2212;Persist Security Info=False;User ID=devopsadmin;Password={your_password};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
   ingress:
     host: dev-get-tasks-api.jhandu.shop
     ingressClass: azure-application-gateway
@@ -32,7 +32,7 @@ deleteTask:
     tag: v1
   port: 8000
   ServicePort: 80
-  connectionString: "Driver={ODBC Driver 18 for SQL Server};Server=tcp:sql-dev-todoapp-78666.database.windows.net,1433;Database=sqldb-dev-todoapp;Uid=devopsadmin;Pwd=P@ssw01rd@123;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;"
+  connectionString: "Server=tcp:sql-dev-todoapp-02211.database.windows.net,1433;Initial Catalog=sqldbdb2212;Persist Security Info=False;User ID=devopsadmin;Password={your_password};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
   ingress:
     host: dev-delete-task-api.jhandu.shop
     ingressClass: azure-application-gateway
@@ -44,7 +44,7 @@ addTask:
     tag: v1
   port: 8000
   ServicePort: 80
-  connectionString: "Driver={ODBC Driver 18 for SQL Server};Server=tcp:sql-dev-todoapp-78666.database.windows.net,1433;Database=sqldb-dev-todoapp;Uid=devopsadmin;Pwd=P@ssw01rd@123;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;"
+  connectionString: "Server=tcp:sql-dev-todoapp-02211.database.windows.net,1433;Initial Catalog=sqldbdb2212;Persist Security Info=False;User ID=devopsadmin;Password={your_password};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
   ingress:
     host: dev-add-task-api.jhandu.shop
     ingressClass: azure-application-gateway
